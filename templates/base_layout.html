@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>It Project 1</title>
+    <style>
+        body {
+            background-color: #0f121f;
+            background-image: url('https://firebasestorage.googleapis.com/v0/b/trail-2e046.appspot.com/o/stars.png?alt=media&token=a7b2f220-8a97-4230-bd12-84af394d3e11');
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+        
+        body * {
+            font-family: Ubuntu;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-weight: normal;
+            margin: 0;
+        }
+        
+        a,
+        a:hover,
+        a:visited {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="wrapper">
+        <h1>
+            <a href="{% url 'articles:list' %}"><img src="https://firebasestorage.googleapis.com/v0/b/trail-2e046.appspot.com/o/logo.png?alt=media&token=d332bdbf-d59c-4f36-af6b-62461e692e81" alt="Hello There" /></a>
+        </h1>
+    </header>
+    <div class="wrapper">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+
+</html>

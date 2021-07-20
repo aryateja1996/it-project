@@ -1,0 +1,16 @@
+{% extends 'base_layout.html' %} {% block content %}
+<div class="article-detail">
+
+    <div class="article">
+
+        <div class="img_holder" style="width: 500px; height : 500px;display:flex ">
+            <img src="{{ article.thumb.url }}" style="justify-self: center; object-fit : contain;width:100%" />
+        </div>
+
+
+        <h2 style="display: absolute">{{ article.title }}</h2>
+        <p>{{ article.body }}</p>
+        <p>{{ article.date }}</p>
+    </div>
+</div>
+{% endblock %}
